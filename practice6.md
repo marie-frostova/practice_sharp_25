@@ -10,7 +10,7 @@ public interface IDisplacementCache<T>
 	ITimeService TimeService { get; }
 	
 	IReadOnlyDictionary<string, T> GetAllCacheItems();
-	T GetOrAdd(string key, T item);
+	T AddOrUpdate(string key, T item);
 	T TryGet(string key);
 	void ClearExpiredItems();
 }
