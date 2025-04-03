@@ -128,7 +128,8 @@ public sealed class CreateProductDto
 
 ```
 public sealed class UpdateProductDto  
-{  
+{
+    public Guid Id { get; get; }
     public string Name { get; get; }  
     public string Description { get; get; }  
     public decimal Price { get; get; }  
